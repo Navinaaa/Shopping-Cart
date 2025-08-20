@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Fresh Apples",
+    "imageUrl": "/imgs/apples.jpg",
+    "quantity": 50,
+    "price": 2.99
+  },
+  {
+    "id": 2,
+    "name": "Bananas",
+    "imageUrl": "/imgs/bananas.jpg",
+    "quantity": 75,
+    "price": 1.49
+  },
+  {
+    "id": 3,
+    "name": "Carrots",
+    "imageUrl": "/imgs/carrots.jpg",
+    "quantity": 60,
+    "price": 0.99
+  },
+  {
+    "id": 4,
+    "name": "Tomatoes",
+    "imageUrl": "/imgs/tomatoes.jpg",
+    "quantity": 40,
+    "price": 3.49
+  },
+  {
+    "id": 5,
+    "name": "Spinach Bunch",
+    "imageUrl": "/imgs/spinach.jpg",
+    "quantity": 35,
+    "price": 2.29
+  }
+]
