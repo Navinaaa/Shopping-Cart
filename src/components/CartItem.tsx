@@ -15,19 +15,31 @@ export function CartItem({ id, quantity }: CartItemProps) {
 
     return (
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
-        <img
-            src={item.imageUrl}
-            style={{width:"125px", height: "75px", objectFit:"cover"}}
-        />
-        <div className="me-auto">
-            <div>
-                {item.name}{" "} {quantity > 1 && <span className="text-muted" style={{ fontSize:".65rem"}}>
-                    {quantity}x</span>}
-            </div>
-            <div className="text-muted" style={{ fontSize: ".75rem" }}>${item.price}</div>
-            <div>${(item.price * quantity)}</div>
-            <Button variant="outline-danger" size="sm" onClick={() => removeFromCart(item.id)}>&times;</Button>
+      <img
+        src={item.imageUrl}
+        style={{ width: "125px", height: "75px", objectFit: "cover" }}
+      />
+      <div className="me-auto">
+        <div>
+          {item.name}{" "}
+          {quantity > 1 && (
+            <span className="text-muted" style={{ fontSize: ".65rem" }}>
+              x{quantity}
+            </span>
+          )}
         </div>
-        </Stack>
+        <div className="text-muted" style={{ fontSize: ".75rem" }}>
+          ${item.price}
+        </div>
+      </div>
+      <div> ${(item.price * quantity)}</div>
+      <Button
+        variant="outline-danger"
+        size="sm"
+        onClick={() => removeFromCart(item.id)}
+      >
+        &times;
+      </Button>
+    </Stack>
     );
 }

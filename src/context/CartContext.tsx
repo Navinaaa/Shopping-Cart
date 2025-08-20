@@ -21,7 +21,6 @@ type CartContextType = {
   cartItems: CartItem[];
 };
 
-// Create context with proper type
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function useCart() {

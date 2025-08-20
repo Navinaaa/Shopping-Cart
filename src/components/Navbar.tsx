@@ -9,7 +9,6 @@ function NavBarTSX() {
     return (
     <Navbar sticky="top" expand="lg" className="bg-body-tertiary shadow-sm">
       <Container>
-        {/* Left side: Logo */}
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,12 +16,10 @@ function NavBarTSX() {
             height="60"
             viewBox="0 0 2048 2048"
           >
-            {/* Paste your logo SVG content here */}
           </svg>
           <span className="ms-2 fw-bold">PRODUCE ROOM</span>
         </Navbar.Brand>
 
-        {/* Collapsible Nav Links */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/shop">Store</Nav.Link>
@@ -33,9 +30,8 @@ function NavBarTSX() {
         <div className="d-flex align-items-center ms-auto">
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-2" />
 
-          {/* Cart Button */}
           <Button
-            onClick={openCart} // Only open the cart modal
+            onClick={openCart} 
             variant="outline-primary"
             className="rounded-circle position-relative"
             style={{ width: "3rem", height: "3rem" }}
